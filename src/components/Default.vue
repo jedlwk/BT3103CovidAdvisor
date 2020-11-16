@@ -3,7 +3,7 @@
   <div id="default">
     
     <div id="textbox">
-    <h1 id="start">Welcome to SafeTrack!</h1>
+    <h1 id="start">Welcome to SafeTrack</h1>
     <h3>A COVID-19 Symptoms Tracker</h3>
 
     <p id="middle">
@@ -15,16 +15,16 @@
     <ol>
       <li>Enter your symptoms information.</li>
       <li>Enter your brief medical history.</li>
-      <li>Done! The likelihood of you contracting COVID-19 will be revealed and you will be adviced on the next steps to take!</li>
+      <li>Done! Your risk of contracting COVID-19 will be revealed and you will be advised on the next steps to take.</li>
     </ol>
 
       <br><br>
 
-      <button id="end" style="font-size:18px;font-weight:bold;margin:10px"><router-link to="/symptoms1">Start your Assessment Now!</router-link></button>
+      <button id="end" style="font-size:18px;font-weight:bold;margin:10px"><router-link to="/symptoms1">Start your Assessment Now</router-link></button>
     </div>
 
     <div id="wrapper">
-      <h1 id="title">Stay Updated from the World Health Organization:</h1>
+      <h2 id="title">Stay Updated with Tweets from the World Health Organization</h2>
     <div id="twitter">
 
       <Timeline id="WHO" sourceType="profile" style="width:350px;" :options="{ tweetLimit: '10' }"/>
@@ -58,10 +58,7 @@ export default {
 
 <style scoped>
 #default {
-  padding-top:20px;
-  padding-left:40px;
-  padding-right:40px;
-  padding-bottom:60px;
+  padding: 20px 40px 60px;
 }
 
 #start {
@@ -87,6 +84,7 @@ ol {
   width:400px;
   display:inline-block;
   height:500px;
+  margin-top:40px;
 }
 #twitter {
   width:400px;

@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Stats from "@/components/Stats";
 import Login from "@/components/Login";
 import Default from "@/components/Default";
-import SymptomsPage from "@/components/SymptomsPage";
 import Profile from "@/components/Profile";
 import RiskAssessments from "@/components/RiskAssessments";
 import Settings from "@/components/Settings";
@@ -21,7 +20,6 @@ export default new Router({
         { path: '/map', name: "Map",component: Map},
         { path: '/symptoms1', name: "Symptoms1",component: SymptomsPage1},
         { path: '/symptoms2', name: "Symptoms2",component: SymptomsPage2},
-        { path: '/symptoms', name: "Symptoms",component: SymptomsPage},
         { path: '/profile', name: "Profile",component: Profile,
             children: [
                 {path:'', component:Account},

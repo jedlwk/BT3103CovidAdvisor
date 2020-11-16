@@ -26,7 +26,11 @@
       </div>
     </div>
     <div id="photobar">
+<<<<<<< HEAD
       <div class="titletext">Welcome {{ username }}!</div>
+=======
+      <div class="titletext">Welcome{{username}}.</div>
+>>>>>>> master
     </div>
     <div style="width:100%">
       <router-view
@@ -46,20 +50,31 @@ export default {
   components: {},
   data() {
     return {
+<<<<<<< HEAD
       username: "",
       signedIn: false,
     };
+=======
+      signedIn: false,
+      username: " to SafeTrack"
+    }
+>>>>>>> master
   },
   methods: {
     toggleSignIn(username) {
       this.signedIn = true;
-      this.username = username;
+      this.username = ", " + username;
       this.$router.push("/");
     },
     toggleSignOut() {
       this.signedIn = false;
+<<<<<<< HEAD
       this.username = "";
     },
+=======
+      this.username = " to SafeTrack";
+    }
+>>>>>>> master
   },
 };
 </script>
@@ -92,10 +107,19 @@ h1 {
 }
 
 .titletext {
+<<<<<<< HEAD
   font-size: 80px;
   float: right;
   margin: 120px 10% 120px 120px;
   text-align: right;
+=======
+  font-size:80px;
+  text-align:right;
+  position:relative;
+  left:calc(100% - 600px);
+  top:20%;
+  max-width:500px;
+>>>>>>> master
 }
 
 #header {

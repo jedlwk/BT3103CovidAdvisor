@@ -1,7 +1,7 @@
 <template>
     <div id="map">
         <div id="title">
-            <h1>Public Places that confirmed COVID-19 cases visited when infectious!</h1>
+            <h1>Public Places Visited by Cases during Infectious Period</h1>
             <p>These public places had been visited for more than 30 minutes by the confirmed cases in the community. 
                 Those who had been identified as close contacts of confirmed cases would already have been notified by MOH. 
                 Click <a target="_blank" href="https://wereyouthere.safeentry.gov.sg/"> here</a> to check if you have been to these places.
@@ -12,7 +12,7 @@
                     <li>See a doctor promptly if you develop symptoms and inform the doctor of your exposure history</li>
                 </ul>
 
-            <button type="button" class="end" @click="showModal">Click Here to check out the Locations!</button>
+            <button type="button" class="end" @click="showModal">View Locations as List</button>
                 <modal-map-list id="modal" v-show="isModalVisible" @close="closeModal"/>
         </div>
         <div id="large-container">

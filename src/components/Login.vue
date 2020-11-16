@@ -14,8 +14,8 @@
       </li>
     </ul>
   </form>
-  <hr><br><h3>
-  New to the SafeTrack? </h3><a><br><router-link to="/register">Register Here</router-link></a> or
+  <hr><h3>
+  New to SafeTrack?</h3><a><router-link to="/register">Register Here</router-link></a> or
   <a><router-link to="/symptoms1">Continue Anonymously</router-link></a>.
 </div>
 </template>
@@ -117,5 +117,10 @@ a:hover {
   color: #456a9b;
   text-decoration: underline;
   transition:0.5s;
+}
+
+h3 {
+  display: inline-block;
+   margin-right:7px;
 }
 </style>

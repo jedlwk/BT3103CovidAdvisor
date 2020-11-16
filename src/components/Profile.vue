@@ -32,6 +32,7 @@ export default {
         firebase.auth().onAuthStateChanged(() => {
           this.$emit('toggleSignOut')
           this.$router.push('/login')
+          this.$router.go(0)
         })
       })
     }
@@ -52,7 +53,6 @@ export default {
   width: 20%;
   vertical-align: top;
   padding-bottom: 20px;
-  padding-left: 20px;
   padding-top: 25px;
 }
 #tab h1 {
